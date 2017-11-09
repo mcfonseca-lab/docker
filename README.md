@@ -1,2 +1,2 @@
 # hisat2pipeline
-Hisat2, Stringtie, Gffcompare and samtools Docker Image 
+Hisat2, Stringtie, Gffcompare and Samtools  -> DOCKER IMAGE 
