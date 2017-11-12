@@ -2,27 +2,15 @@
 # This dockerfile is based on the one created by
 
 
-FROM ubuntu:16.04
+FROM FROM biocontainers/biocontainers:latest
 
 MAINTAINER Rui Luis <ruisergioluis@gmail.com>
 
-ENV PACKAGES git gcc make g++ cmake libboost-all-dev liblzma-dev libbz2-dev \
-    ca-certificates zlib1g-dev curl unzip autoconf
 ENV SALMON_VERSION 0.8.2
 
-# salmon binary will be installed in /home/salmon/bin/salmon
+RUN conda install salmon=${SALMON_VERSION}
 
-### don't modify things below here for version updates etc.
+WORKDIR /data/
 
-WORKDIR /home
-
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends ${PACKAGES} && \
-    apt-get clean
-
-RUN mkdir build && \
-    cd build && \
-    cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local && make && make install
-
-ENV PATH /home/salmon-${SALMON_VERSION}/bin:${PATH}
+CMD ["salmon"]
 
