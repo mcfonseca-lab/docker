@@ -1,2 +1,2 @@
-# hisat2pipeline
-Hisat2, Stringtie, Gffcompare and Samtools  -> DOCKER IMAGE 
+# Docker Images 
+* Hisat2 Pipeline
