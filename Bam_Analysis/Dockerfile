@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:latest
 
 MAINTAINER Rui Luis <ruisergioluis@gmail.com> 
 
@@ -11,13 +11,13 @@ RUN apt-get update && apt-get install -y \
 	zlib1g-dev \
 	libncurses-dev \
 	libbz2-dev \
-	liblzma-dev
-	python
-	python-numpy
-	r-base
-	cython
-	python-dev 
-	python3-dev
+	liblzma-dev \
+	python \
+	python-numpy \
+	r-base \
+	cython \
+	python-dev \
+	python3-dev 
 
 # Install samtools
 WORKDIR /docker
