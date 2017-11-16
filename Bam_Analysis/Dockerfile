@@ -52,6 +52,8 @@ RUN wget http://downloads.sourceforge.net/project/rseqc/RSeQC-2.6.4.tar.gz && \
     python ./setup.py build && \
     python ./setup.py install 
 
+#Install Picard-tools
+RUN apt-get install -y picard-tools
 
 
 RUN rm -rf /docker/samtools-1.6
