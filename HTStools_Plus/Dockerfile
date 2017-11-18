@@ -18,5 +18,5 @@ RUN git clone git://github.com/pezmaster31/bamtools.git && \
 	cd bamtools && \
 	git checkout tags/v2.4.0 -b v2.4.0 && \
 	mkdir -p build && cd build && \
-	cmake .. && make && make install && cd .. && \
+	cmake .. && make && make install
 
