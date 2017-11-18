@@ -2,7 +2,7 @@ FROM argrosso/htstools:latest
 
 MAINTAINER Rui Luis <ruisergioluis@gmail.com>
 
-RUN apt-get update && apt-get install -y zlib1g-dev libjsoncpp-dev python-numpy python-pandas python-pysam python-scipy
+RUN apt-get update && apt-get install -y zlib1g-dev libjsoncpp-dev python-numpy python-pandas python-pysam python-scipy git
 
 WORKDIR /docker
 RUN wget http://downloads.sourceforge.net/project/rseqc/RSeQC-2.6.4.tar.gz && \
@@ -14,11 +14,9 @@ RUN wget http://downloads.sourceforge.net/project/rseqc/RSeQC-2.6.4.tar.gz && \
 
 
 WORKDIR /docker
-RUN wget https://github.com/pezmaster31/bamtools/archive/v2.4.2.tar.gz && \
-     tar -zxf v2.4.2.tar.gz && \
-     cd bamtools-2.4.2 && \
-     cmake .. && \
-     make && \
-     make install
- 
- 
+RUN git clone git://github.com/pezmaster31/bamtools.git && \
+	cd bamtools && \
+	git checkout tags/v2.4.0 -b v2.4.0 && \
+	mkdir -p build && cd build && \
+	cmake .. && make && make install && cd .. && \
+
