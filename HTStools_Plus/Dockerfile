@@ -16,6 +16,6 @@ RUN wget https://github.com/pezmaster31/bamtools/archive/v2.4.2.tar.gz && \
 RUN cd bamtools-2.4.2 && \
     ./configure && \
     make && \
-    make install  && 
+    make install  
  
  
