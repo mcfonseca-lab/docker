@@ -2,7 +2,7 @@
 * [Hisat2 Pipeline](https://github.com/mcfonseca-lab/docker/tree/master/hisat2pipeline)
 * [HTStools Plus](https://github.com/mcfonseca-lab/docker/tree/master/htstools_plus)
 * [Salmon](https://github.com/mcfonseca-lab/docker/tree/master/salmon)
-* [fastutils](https://github.com/mcfonseca-lab/docker/tree/master/fastutil)
+* [fastutils](https://github.com/mcfonseca-lab/docker/tree/master/fastutils)
 
 # Existing images pulled from dockerhub into lobo
 
