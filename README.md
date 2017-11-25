@@ -7,3 +7,4 @@
 # Existing images pulled from dockerhub into lobo
 
 * [Delly](https://github.com/dellytools/delly) - Structural variant caller for Illumina paired-end sequencing data. Based on paired-end read mapping information (PEM) and split-read analysis.
+* [bcbio](https://github.com/chapmanb/bcbio-nextgen) - Mutiple analysis pipeline for high throughput sequencing data. Pulled [latest image build](https://hub.docker.com/r/bcbio/bcbio/) from dockerhub on November 25th, 2017
