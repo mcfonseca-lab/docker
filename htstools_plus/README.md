@@ -2,4 +2,4 @@ Dockerfile that includes a set of utilities for high throughput sequencing proce
 
 Image latest version: 0.2 
 - [Missing description of several tools]
-- [bamtools](https://github.com/pezmaster31/bamtools) v2.4.2: C++ toolit for working with BAM data
+- [bamtools](https://github.com/pezmaster31/bamtools) v2.5.0: C++ toolit for working with BAM data
