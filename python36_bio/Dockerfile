@@ -9,4 +9,4 @@ RUN apt-get update && apt-get install -y bzip2 wget libgl1-mesa-glx && wget http
 
 ENV PATH "$PATH:/python_env/miniconda3/bin"
 
-RUN conda install -c miniconda numpy pandas seaborn scipy
+##RUN conda install -c miniconda numpy pandas seaborn scipy
