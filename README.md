@@ -8,5 +8,5 @@
 ### Existing images pulled from dockerhub into lobo
 
 * [Delly](https://github.com/dellytools/delly) - Structural variant caller for Illumina paired-end sequencing data. Based on paired-end read mapping information (PEM) and split-read analysis. Pulled [latest image build](https://hub.docker.com/r/dellytools/delly/) from dockerhub on December 12th, 2017)
-* [GATK4](https://github.com/broadinstitute/gatk) - Variant discovery pipeline for high throughput sequencing data. This new GATK version includes picard utilites within the release.  Pulled [latest image build](https://hub.docker.com/r/broadinstitute/gatk/), the oficial 4.0.0.0 release from dockerhub on January 10th, 2018
+* [GATK4](https://github.com/broadinstitute/gatk) - Variant discovery pipeline for high throughput sequencing data. This new GATK version includes picard utilites within the release.  Pulled [latest image build](https://hub.docker.com/r/broadinstitute/gatk/), the oficial 4.0.1.2 release from dockerhub on February 12th, 2018
 * [cnvkit](https://github.com/etal/cnvkit) - Copy number variation analysis from targeted DNA sequencing data. Pulled [latest image build (v0.9.1)](https://hub.docker.com/r/etal/cnvkit/) from dockerhub on November 28th, 2017
