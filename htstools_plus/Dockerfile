@@ -20,6 +20,12 @@ RUN pip install RSeQC
 #Deeptools
 RUN pip install deeptools
 
+#Bedtools2 Update 
+RUN rm -r bedtools2 && \
+    git clone https://github.com/arq5x/bedtools2.git && \
+    cd bedtools2 && \
+    make && \
+    make install 
 
 RUN apt-get remove git cmake -y
 RUN apt-get autoclean -y
