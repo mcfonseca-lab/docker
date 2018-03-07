@@ -1,4 +1,4 @@
-FROM argrosso/htstools:latest
+FROM argrosso/htstools:0.1.2
 
 MAINTAINER Rui Luis <ruisergioluis@gmail.com>
 
@@ -26,6 +26,16 @@ RUN rm -r bedtools2 && \
     cd bedtools2 && \
     make && \
     make install 
+
+#Samtools Update
+RUN wget https://github.com/samtools/samtools/releases/download/1.7/samtools-1.7.tar.bz2 && \
+    tar -xjf  samtools-1.7.tar.bz2  && \ 
+    cd samtools-1.7 && \
+    ./configure --prefix=/usr/local/bin && \
+    make && \
+    make install
+ 
+
 
 RUN apt-get remove git cmake -y
 RUN apt-get autoclean -y
