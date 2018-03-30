@@ -6,4 +6,4 @@ Image latest version: 0.2
 - [vcfanno v0.2.8](https://github.com/brentp/vcfanno) - vcfanno allows to quickly annotate a VCF with any number of INFO fields from any number of VCFs or BED files.<br/>```srun shifter --image=mcfonsecalab/variantutils:latest vcfanno```
 
 - [snpEff & SnpSift v4.3](http://snpeff.sourceforge.net/) - Genetic variant annotation and functional effect prediction toolbox. <br/>```srun shifter --image=mcfonsecalab/variantutils:latest java -jar snpEff/snpEff.jar```<br/>
-```srun shifter --image=mcfonsecalab/variantutils:latest java -jar snpEff/snpEff.jar```
+```srun shifter --image=mcfonsecalab/variantutils:latest java -jar snpEff/SnpSift.jar```
