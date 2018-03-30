@@ -9,10 +9,10 @@ RUN apt-get update && \
 
 RUN apt-get install -y libbz2-1.0 libbz2-dev libbz2-ocaml libbz2-ocaml-dev liblzma-dev
 
-#bcftools 1.7-1-ge07034a (using htslib 1.7-22-gf9e5e35)
+LABEL description="bcftools version 1.7-1-ge07034a (using htslib 1.7-22-gf9e5e35)"
 RUN git clone git://github.com/samtools/htslib.git && git clone git://github.com/samtools/bcftools.git && cd bcftools && make
 
-#vcfanno 0.2.8
+LABEL description="vcfanno version 0.2.8"
 conda install -c bioconda vcfanno
 
 ENV PATH "$PATH:/tools/bcftools"

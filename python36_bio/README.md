@@ -1,4 +1,4 @@
-Docker Image with Python 3.6.3 and the following python's modules:
+Docker Image with Python 3.6.3 with the conda package manager and the following python's modules:
   * [Matplotlib v2.1](https://matplotlib.org/)
   * [Pandas v0.22.0](https://github.com/pandas-dev/pandas)
   * [NumPy v1.14](https://github.com/numpy/numpy)
