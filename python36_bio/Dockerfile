@@ -13,4 +13,7 @@ RUN conda config --add channels defaults && \
     conda config --add channels conda-forge && \
     conda config --add channels bioconda
 
-RUN conda install -y -c bioconda numpy pandas seaborn scipy
+RUN conda install -y -c bioconda numpy 
+RUN conda install -y -c bioconda pandas
+RUN conda install -y -c bioconda seaborn
+RUN conda install -y -c bioconda scipy
