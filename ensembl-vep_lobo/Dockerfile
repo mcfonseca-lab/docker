@@ -9,7 +9,7 @@ LABEL Description="This image is used to run ENSEMBL-VEP within lobo through shi
 #Set folder and files variables
 #SOFTWARE_FOLDER=/software   
 #VEP_FOLDER=/software/vep/src/ensembl-vep/  
-ENV CACHE_FOLDER=/home/vep/.vep
+ENV CACHE_FOLDER=/vep_cache/
 
-#Create .vep folder
-RUN mkdir /home/vep/.vep
+#Create vep_cache folder
+RUN mkdir /vep_cache
