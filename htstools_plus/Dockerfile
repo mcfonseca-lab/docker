@@ -35,6 +35,8 @@ RUN wget https://github.com/samtools/samtools/releases/download/1.7/samtools-1.7
     make && \
     make install
  
+#Multiqc 
+RUN pip install multiqc
 
 
 RUN apt-get remove git cmake -y
