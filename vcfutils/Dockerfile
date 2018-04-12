@@ -29,15 +29,33 @@ ENV SNPEFF_HOME="/tools/snpEff"
 RUN java -jar $SNPEFF_HOME/snpEff.jar download GRCh37.75
 RUN java -jar $SNPEFF_HOME/snpEff.jar download GRCh38.86
 
-
 #BCFTOOLS
 LABEL bcftools="version 1.7-1-ge07034a (using htslib 1.7-22-gf9e5e35)"
 RUN git clone git://github.com/samtools/htslib.git && git clone git://github.com/samtools/bcftools.git && cd bcftools && make
 ENV PATH="$PATH:/tools/bcftools"
 
+#Update conda, if new version is available
+RUN conda update -n base conda
+#Vt
+LABEL Vt=""
+RUN conda install -c bioconda vt && conda update vt
+
 #VCFANNO
 LABEL vcfanno="version 0.2.8"
 RUN conda install -c bioconda vcfanno
 
+#PYVCF
+LABEL pyvcf="0.6.8"
+RUN conda install -c bioconda pyvcf 
+
+#scikit-allel
+LABEL scikit-allel="1.1.10"
+RUN conda install -c conda-forge scikit-allel
+
+#cyvc2
+LABEL cyvcf2="0.8.8"
+RUN pip install cyvcf2
+
 RUN apt-get remove git -y
 RUN apt-get clean all -y
+
