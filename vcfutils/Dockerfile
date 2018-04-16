@@ -35,7 +35,7 @@ RUN git clone git://github.com/samtools/htslib.git && git clone git://github.com
 ENV PATH="$PATH:/tools/bcftools"
 
 #Update conda, if new version is available
-RUN conda update -n base conda
+#RUN conda update -n base conda
 #Vt
 LABEL Vt=""
 RUN conda install -c bioconda vt && conda update vt
