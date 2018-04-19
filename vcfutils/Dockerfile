@@ -54,7 +54,7 @@ RUN conda install -c conda-forge scikit-allel
 
 #cyvc2
 LABEL cyvcf2="0.8.8"
-RUN pip install --upgrade pip && pip install cyvcf2
+RUN pip install --upgrade pip && pip install cython && pip install cyvcf2
 #RUN git clone https://github.com/brentp/cyvcf2 && cd cyvcf2 && pip install --editable .
 
 RUN apt-get remove git -y
