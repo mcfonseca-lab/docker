@@ -2,6 +2,7 @@ FROM argrosso/htstools:0.1.2
 
 MAINTAINER Rui Luis <ruisergioluis@gmail.com>
 
+
 RUN apt-get update && apt-get install -y cmake git zlib1g-dev liblzo2-dev
 
 
@@ -38,6 +39,16 @@ RUN wget https://github.com/samtools/samtools/releases/download/1.7/samtools-1.7
 #Multiqc 
 RUN pip install multiqc
 
+#featureCounts Installation
+ARG PACKAGE_VERSION=1.6.1
+RUN wget -q https://downloads.sourceforge.net/project/subread/subread-${PACKAGE_VERSION}/subread-${PACKAGE_VERSION}-source.tar.gz && \
+    tar -xzf subread-${PACKAGE_VERSION}-source.tar.gz && \
+    cd subread-${PACKAGE_VERSION}-source/src && \
+    make -f Makefile.Linux && \
+    cd ../bin && \
+    mv utilities/* . && \
+    rmdir utilities && \
+    mv * /usr/local/bin/
 
 RUN apt-get remove git cmake -y
 RUN apt-get autoclean -y
