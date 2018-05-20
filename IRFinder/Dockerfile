@@ -6,6 +6,7 @@ RUN apt-get update
 #RUN conda update -n base conda
 
 LABEL irfinder="v1.2.3"
-RUN conda install -c bioconda irfinder  
+LABEL star="v2.6.0b"
+RUN conda install -c bioconda irfinder star 
 
 RUN apt-get autoclean -y
