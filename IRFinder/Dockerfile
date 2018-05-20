@@ -1,9 +1,9 @@
-FROM ubuntu:16.04
+FROM mcfonsecalab/python36_bio 
 
 MAINTAINER Rui Luis  <rluis@medicina.ulisboa.pt>
 
 RUN apt-get update 
-RUN conda update -n base conda
+#RUN conda update -n base conda
 
 LABEL irfinder="v1.2.3"
 RUN conda install -c bioconda irfinder  
