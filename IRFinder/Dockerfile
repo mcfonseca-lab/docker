@@ -7,6 +7,7 @@ RUN apt-get update
 
 LABEL irfinder="v1.2.3"
 LABEL star="v2.6.0b"
-RUN conda install -c bioconda irfinder star 
+LABEL bedtools="v2.27.1"
+RUN conda install -c bioconda irfinder star bedtools
 
 RUN apt-get autoclean -y
