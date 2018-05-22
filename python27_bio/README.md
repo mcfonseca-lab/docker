@@ -1,5 +1,6 @@
 Docker Image with Python 2.7 and the following python's modules:
 
+  * [pyBedTools](https://github.com/daler/pybedtools)
   * [Pandas](https://github.com/pandas-dev/pandas)
   * [NumPy](https://github.com/numpy/numpy)
   * [SciPy](https://github.com/scipy/scipy)
