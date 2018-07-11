@@ -60,6 +60,9 @@ RUN pip install --upgrade pip && pip install cython && pip install cyvcf2
 #install pybedtools
 RUN conda install -c bioconda pybedtools
 
+#HGVS module
+RUN python -m pip install pip==9.0.3 && git clone https://github.com/counsyl/hgvs.git && cd hgvs && python setup.py install && \
+    cd ../ && rm -rf hgvs
+
 RUN apt-get remove git -y
 RUN apt-get clean all -y
-
