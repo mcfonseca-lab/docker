@@ -17,5 +17,6 @@ RUN conda config --add channels defaults && \
     conda config --add channels conda-forge && \
     conda config --add channels bioconda
  
-RUN conda install -y -c bioconda pandas seaborn scipy numpy 
+RUN conda install -y -c bioconda pandas seaborn scipy numpy
+RUN conda install -y biopython && conda update biopython
 RUN pip install -U scikit-learn sklearn-pandas imbalanced-learn
