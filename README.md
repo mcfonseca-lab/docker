@@ -5,6 +5,7 @@
 * [fastutils](https://github.com/mcfonseca-lab/docker/tree/master/fastutils)
 * [strelka2](https://github.com/mcfonseca-lab/docker/tree/master/strelka)
 * [coverage_tools](https://github.com/mcfonseca-lab/docker/tree/master/coverage_tools)
+* [splicing_tools](https://github.com/mcfonseca-lab/docker/tree/master/splicing_tools)
 * [vcfutils](https://github.com/mcfonseca-lab/docker/tree/master/vcfutils)
 * [python27_bio](https://github.com/mcfonseca-lab/docker/tree/master/python27_bio)
 * [python36_bio](https://github.com/mcfonseca-lab/docker/tree/master/python36_bio)
