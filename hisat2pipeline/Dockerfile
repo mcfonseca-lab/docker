@@ -69,12 +69,17 @@ RUN wget http://ccb.jhu.edu/software/stringtie/dl/gffcompare-0.10.1.Linux_x86_64
         cp ./gffcompare-0.10.1.Linux_x86_64/gffcompare /usr/bin/
 
 
+# Install featurescounts (from subread package)
+WORKDIR /docker
+RUN wget https://sourceforge.net/projects/subread/files/subread-1.6.3/subread-1.6.3-Linux-x86_64.tar.gz && \
+    tar xvzf subread-1.6.3-Linux-x86_64.tar.gz && \
+    cp -R ./subread-1.6.3-Linux-x86_64/bin/* /usr/bin/
 
 # Cleanup
 RUN rm -rf /docker/hisat2-2.1.0
 RUN rm -rf /docker/samtools-1.6
 RUN rm -rf /docker/stringtie-1.3.3b.Linux_x86_64
-RUN rm -rf /docker/gffread-0.9.9.Linux_x86_64
+RUN rm -rf /docker/gffread-0.9.9.Linux_x86_64 /docker/subread-1.6.3-Linux-x86_64/
 RUN apt-get clean
 RUN apt-get remove --yes --purge build-essential gcc-multilib apt-utils zlib1g-dev vim
 
