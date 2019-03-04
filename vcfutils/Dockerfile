@@ -40,29 +40,19 @@ ENV PATH="$PATH:/tools/bcftools"
 LABEL Vt=""
 RUN conda install -c bioconda vt && conda update vt
 
-#VCFANNO
+#VCFANNO, PYVCF
 LABEL vcfanno="version 0.2.8"
-RUN conda install -c bioconda vcfanno
-
-#PYVCF
 LABEL pyvcf="0.6.8"
-RUN conda install -c bioconda pyvcf 
+RUN conda install -c bioconda vcfanno pyvcf pybedtools
 
 #scikit-allel
 LABEL scikit-allel="1.1.10"
 RUN conda install -c conda-forge scikit-allel
 
-#cyvc2
+#cyvc2, hgvs, tensorflow, spliceai
 LABEL cyvcf2="0.8.8"
-RUN pip install --upgrade pip && pip install cython && pip install cyvcf2
+RUN pip install --upgrade pip && pip install cython && pip install cyvcf2 hgvs tensorflow spliceai
 #RUN git clone https://github.com/brentp/cyvcf2 && cd cyvcf2 && pip install --editable .
-
-#install pybedtools
-RUN conda install -c bioconda pybedtools
-
-#HGVS module
-RUN python -m pip install pip==9.0.3 && git clone https://github.com/counsyl/hgvs.git && cd hgvs && python setup.py install && \
-    cd ../ && rm -rf hgvs
 
 RUN apt-get remove git -y
 RUN apt-get clean all -y
