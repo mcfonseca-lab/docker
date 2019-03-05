@@ -1,0 +1,214 @@
+   matplotlib-base-3.0.3      |   py36h167e16e_0         6.7 MB  conda-forge
+    libgcc-ng-7.3.0            |       hdf63c60_0         6.1 MB  conda-forge
+    ca-certificates-2018.11.29 |       ha4d7672_0         143 KB  conda-forge
+    libstdcxx-ng-7.3.0         |       hdf63c60_0         2.6 MB  conda-forge
+    tk-8.6.9                   |    h84994c4_1000         3.1 MB  conda-forge
+    vt-2015.11.10              |       he941832_3         1.5 MB  bioconda
+    freetype-2.9.1             |    h94bbf69_1005         827 KB  conda-forge
+    pillow-5.4.1               |py36h00a061d_1000         614 KB  conda-forge
+    cryptography-2.5           |   py36h9d9f1b6_1         640 KB  conda-forge
+    matplotlib-3.0.3           |           py36_0           6 KB  conda-forge
+    libpng-1.6.36              |    h84994c4_1000         303 KB  conda-forge
+    openssl-1.1.1b             |       h14c3975_0         4.0 MB  conda-forge
+    reportlab-3.5.13           |py36hbd3ef63_1000         2.4 MB  conda-forge
+    pyqt-4.11.4                |           py36_3         3.5 MB  conda-forge
+    qt-4.8.7                   |                2        34.1 MB
+    sqlite-3.26.0              |    h67949de_1000         1.9 MB  conda-forge
+    fontconfig-2.13.1          |    h2176d3f_1000         334 KB  conda-forge
+    conda-4.6.7                |           py36_0         869 KB  conda-forge
+    certifi-2018.11.29         |        py36_1000         145 KB  conda-forge
+    python-3.6.7               |    h381d211_1004        34.5 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       104.1 MB
+
+The following NEW packages will be INSTALLED:
+
+    matplotlib-base: 3.0.3-py36h167e16e_0  conda-forge
+    vt:              2015.11.10-he941832_3 bioconda   
+
+The following packages will be UPDATED:
+
+    ca-certificates: 2018.8.24-ha4d7672_0  conda-forge --> 2018.11.29-ha4d7672_0    conda-forge
+    certifi:         2018.8.24-py36_1      conda-forge --> 2018.11.29-py36_1000     conda-forge
+    conda:           4.5.11-py36_0         conda-forge --> 4.6.7-py36_0             conda-forge
+    cryptography:    2.2.2-py36h14c3975_0              --> 2.5-py36h9d9f1b6_1       conda-forge
+    fontconfig:      2.13.0-hd36ec8e_5     conda-forge --> 2.13.1-h2176d3f_1000     conda-forge
+    freetype:        2.8.1-hfa320df_1      conda-forge --> 2.9.1-h94bbf69_1005      conda-forge
+    libgcc-ng:       7.2.0-hdf63c60_3                  --> 7.3.0-hdf63c60_0         conda-forge
+    libpng:          1.6.34-ha92aebf_1     conda-forge --> 1.6.36-h84994c4_1000     conda-forge
+    libstdcxx-ng:    7.2.0-hdf63c60_3                  --> 7.3.0-hdf63c60_0         conda-forge
+    matplotlib:      2.2.2-py36_1          conda-forge --> 3.0.3-py36_0             conda-forge
+    openssl:         1.0.2o-h470a237_1     conda-forge --> 1.1.1b-h14c3975_0        conda-forge
+    pillow:          5.2.0-py36_0          conda-forge --> 5.4.1-py36h00a061d_1000  conda-forge
+    python:          3.6.5-hc3d631a_2                  --> 3.6.7-h381d211_1004      conda-forge
+    reportlab:       3.4.0-py36hdd9f355_1  conda-forge --> 3.5.13-py36hbd3ef63_1000 conda-forge
+    sqlite:          3.23.1-he433501_0                 --> 3.26.0-h67949de_1000     conda-forge
+    tk:              8.6.7-hc745277_3                  --> 8.6.9-h84994c4_1000      conda-forge
+
+The following packages will be DOWNGRADED:
+
+    pyqt:            5.6.0-py36h8210e8a_6  conda-forge --> 4.11.4-py36_3            conda-forge
+    qt:              5.6.2-h974d657_12                 --> 4.8.7-2                             
+
+Proceed ([y]/n)? 
+matplotlib-base-3.0. | 6.7 MB    | ########## | 100% 
+libgcc-ng-7.3.0      | 6.1 MB    | ########## | 100% 
+ca-certificates-2018 | 143 KB    | ########## | 100% 
+libstdcxx-ng-7.3.0   | 2.6 MB    | ########## | 100% 
+tk-8.6.9             | 3.1 MB    | ########## | 100% 
+vt-2015.11.10        | 1.5 MB    | ########## | 100% 
+freetype-2.9.1       | 827 KB    | ########## | 100% 
+pillow-5.4.1         | 614 KB    | ########## | 100% 
+cryptography-2.5     | 640 KB    | ########## | 100% 
+matplotlib-3.0.3     | 6 KB      | ########## | 100% 
+libpng-1.6.36        | 303 KB    | ########## | 100% 
+openssl-1.1.1b       | 4.0 MB    | ########## | 100% 
+reportlab-3.5.13     | 2.4 MB    | ########## | 100% 
+pyqt-4.11.4          | 3.5 MB    | ########## | 100% 
+qt-4.8.7             | 34.1 MB   | ########## | 100% 
+sqlite-3.26.0        | 1.9 MB    | ########## | 100% 
+fontconfig-2.13.1    | 334 KB    | ########## | 100% 
+conda-4.6.7          | 869 KB    | ########## | 100% 
+certifi-2018.11.29   | 145 KB    | ########## | 100% 
+python-3.6.7         | 34.5 MB   | ########## | 100% 
+Downloading and Extracting Packages
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+
+Collecting package metadata: ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /python_env/miniconda3
+
+  added / updated specs:
+    - numpy
+    - vt
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    biopython-1.73             |   py36h14c3975_0         2.5 MB  conda-forge
+    numpy-1.16.2               |py36_blas_openblash1522bff_0         4.3 MB  conda-forge
+    openblas-0.3.3             |    h9ac9557_1001        15.8 MB  conda-forge
+    scipy-1.2.1                |py36_blas_openblash1522bff_0        18.1 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        40.7 MB
+
+The following packages will be UPDATED:
+
+  biopython            bioconda::biopython-1.70-np112py36_1 --> conda-forge::biopython-1.73-py36h14c3975_0
+  blas                              pkgs/main::blas-1.0-mkl --> conda-forge::blas-1.1-openblas
+  numpy              pkgs/main::numpy-1.12.1-py36he24570b_1 --> conda-forge::numpy-1.16.2-py36_blas_openblash1522bff_0
+  openblas                                         0.2.20-8 --> 0.3.3-h9ac9557_1001
+  scipy               pkgs/main::scipy-1.1.0-py36hc49cb51_0 --> conda-forge::scipy-1.2.1-py36_blas_openblash1522bff_0
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages
+openblas-0.3.3       | 15.8 MB   | ########## | 100% 
+numpy-1.16.2         | 4.3 MB    | ########## | 100% 
+biopython-1.73       | 2.5 MB    | ########## | 100% 
+scipy-1.2.1          | 18.1 MB   | ########## | 100% 
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+ ---> e073a8c3e6df
+Removing intermediate container d9cafc335b0b
+Step 10/18 : LABEL vcfanno "version 0.2.8"
+ ---> Running in a36879211df3
+ ---> 4229b1a726c3
+Removing intermediate container a36879211df3
+Step 11/18 : LABEL pyvcf "0.6.8"
+ ---> Running in 8d8278fd56df
+ ---> 73b4da9d4b7e
+Removing intermediate container 8d8278fd56df
+Step 12/18 : RUN conda install -c bioconda vcfanno pyvcf pybedtools
+ ---> Running in 683bdb338c1d
+Collecting package metadata: ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /python_env/miniconda3
+
+  added / updated specs:
+    - pybedtools
+    - pyvcf
+    - vcfanno
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    bcftools-1.9               |       h47928c2_2         813 KB  bioconda
+    bedtools-2.27.1            |       he860b03_3         713 KB  bioconda
+    bzip2-1.0.6                |    h14c3975_1002         415 KB  conda-forge
+    curl-7.64.0                |       h646f8bb_2         143 KB  conda-forge
+    htslib-1.9                 |       h47928c2_5         1.5 MB  bioconda
+    krb5-1.16.3                |    h05b26f9_1001         1.4 MB  conda-forge
+    libcurl-7.64.0             |       h541490c_2         573 KB  conda-forge
+    libdeflate-1.0             |       h14c3975_1          43 KB  bioconda
+    libssh2-1.8.0              |    h90d6eec_1004         245 KB  conda-forge
+    mkl_fft-1.0.10             |           py36_0         650 KB  conda-forge
+    mkl_random-1.0.2           |           py36_0         1.3 MB  conda-forge
+    numpy-1.15.4               |   py36h1d66e8a_0          35 KB
+    numpy-base-1.15.4          |   py36h81de0dd_0         4.2 MB
+    pybedtools-0.8.0           |   py36he860b03_1        12.1 MB  bioconda
+    pysam-0.15.2               |   py36h1671916_1         2.2 MB  bioconda
+    pyvcf-0.6.8                |           py36_0          59 KB  bioconda
+    samtools-1.9               |       h91753b0_5         636 KB  bioconda
+    scipy-1.1.0                |   py36hfa4b5c9_1        18.0 MB
+    vcfanno-0.3.1              |                0         4.2 MB  bioconda
+    ------------------------------------------------------------
+                                           Total:        49.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  bcftools           bioconda/linux-64::bcftools-1.9-h47928c2_2
+  bedtools           bioconda/linux-64::bedtools-2.27.1-he860b03_3
+  bzip2              conda-forge/linux-64::bzip2-1.0.6-h14c3975_1002
+  curl               conda-forge/linux-64::curl-7.64.0-h646f8bb_2
+  htslib             bioconda/linux-64::htslib-1.9-h47928c2_5
+  krb5               conda-forge/linux-64::krb5-1.16.3-h05b26f9_1001
+  libcurl            conda-forge/linux-64::libcurl-7.64.0-h541490c_2
+  libdeflate         bioconda/linux-64::libdeflate-1.0-h14c3975_1
+  libssh2            conda-forge/linux-64::libssh2-1.8.0-h90d6eec_1004
+  mkl_fft            conda-forge/linux-64::mkl_fft-1.0.10-py36_0
+  mkl_random         conda-forge/linux-64::mkl_random-1.0.2-py36_0
+  numpy-base         pkgs/main/linux-64::numpy-base-1.15.4-py36h81de0dd_0
+  pybedtools         bioconda/linux-64::pybedtools-0.8.0-py36he860b03_1
+  pysam              bioconda/linux-64::pysam-0.15.2-py36h1671916_1
+  pyvcf              bioconda/linux-64::pyvcf-0.6.8-py36_0
+  samtools           bioconda/linux-64::samtools-1.9-h91753b0_5
+  vcfanno            bioconda/linux-64::vcfanno-0.3.1-0
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  blas                       conda-forge::blas-1.1-openblas --> pkgs/main::blas-1.0-mkl
+  numpy              conda-forge::numpy-1.16.2-py36_blas_o~ --> pkgs/main::numpy-1.15.4-py36h1d66e8a_0
+  scipy              conda-forge::scipy-1.2.1-py36_blas_op~ --> pkgs/main::scipy-1.1.0-py36hfa4b5c9_1
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages
+libdeflate-1.0       | 43 KB     | ########## | 100% 
+pysam-0.15.2         | 2.2 MB    | ########## | 100% 
+mkl_random-1.0.2     | 1.3 MB    | ########## | 100% 
+libcurl-7.64.0       | 573 KB    | ########## | 100% 
+bzip2-1.0.6          | 415 KB    | ########## | 100% 
+numpy-base-1.15.4    | 4.2 MB    | ########## | 100% 
+mkl_fft-1.0.10       | 650 KB    | ########## | 100% 
+bedtools-2.27.1      | 713 KB    | ########## | 100% 
+numpy-1.15.4         | 35 KB     | ########## | 100% 
+krb5-1.16.3          | 1.4 MB    | ########## | 100% 
+scipy-1.1.0          | 18.0 MB   | ########## | 100% 
+pybedtools-0.8.0     | 12.1 MB   | #####9     |  59% 
+
