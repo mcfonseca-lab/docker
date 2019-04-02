@@ -1,11 +1,10 @@
-
-FROM biocontainers/biocontainers:latest
-
+FROM combinelab/salmon:latest
 MAINTAINER Rui Luis <ruisergioluis@gmail.com>
 
-ENV SALMON_VERSION 0.8.1
-ENV KALLISTO_VERSION 0.45
+ENV SALMON_VERSION 0.13.1
+ENV KALLISTO_VERSION 0.45.1
 
-RUN conda install -c bioconda salmon kallisto
-
-WORKDIR /data/
+WORKDIR /tools
+RUN apt-get update && apt-get install -y wget && wget https://github.com/pachterlab/kallisto/releases/download/v0.45.1/kallisto_linux-v0.45.1.tar.gz
+RUN tar -xvzf kallisto_linux-v0.45.1.tar.gz && cd kallisto* && \
+mv ./kallisto /usr/local/bin && cd ../ && rm -rf kallisto*
