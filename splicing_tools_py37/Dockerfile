@@ -2,8 +2,8 @@ FROM mcfonsecalab/python37_bio:latest
 
 MAINTAINER Pedro Barbosa <pedro.barbosa@medicina.ulisboa.pt>
 
-COPY --from=zavolab/whippet:0.11 /root/.julia/ .julia
-ENV PATH="~/.julia/v0.6/Whippet/bin:${PATH}"
+COPY --from=zavolab/whippet:0.11 /root/.julia/ /root/.julia
+ENV PATH="/root/.julia/v0.6/Whippet/bin:${PATH}"
 
 WORKDIR /tools
 RUN wget https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.4-linux-x86_64.tar.gz \
