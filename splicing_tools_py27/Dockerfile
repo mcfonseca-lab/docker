@@ -3,7 +3,7 @@ FROM mcfonsecalab/python27_bio:latest
 MAINTAINER Pedro Barbosa <pedro.barbosa@medicina.ulisboa.pt>
 
 WORKDIR /tools
-RUN apt-get install -y libcurl4-openssl-dev libssl-dev
+RUN apt-get install -y libcurl4-openssl-dev libssl-dev ibblas-dev liblapack-dev libgsl0ldbl gfortran
 ADD dependencies.txt /tmp/dependencies.txt
 RUN conda install --yes --file /tmp/dependencies.txt 
 
