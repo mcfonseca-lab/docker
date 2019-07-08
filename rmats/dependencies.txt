@@ -1,0 +1,4 @@
+bioconda::samtools
+bioconda::star
+bioconda::rmats
+bioconda::rmats2sashimiplot
