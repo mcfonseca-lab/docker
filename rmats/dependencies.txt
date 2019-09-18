@@ -1,4 +1,4 @@
 bioconda::samtools
 bioconda::star
-bioconda::rmats
+bioconda::rmats=4.0.2
 bioconda::rmats2sashimiplot
