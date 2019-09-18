@@ -2,3 +2,5 @@ bioconda::samtools
 bioconda::star
 bioconda::rmats=4.0.2
 bioconda::rmats2sashimiplot
+darts-comp-bio::darts_dnn 
+darts-comp-bio::darts_bht
