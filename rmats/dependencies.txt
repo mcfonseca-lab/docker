@@ -4,3 +4,4 @@ bioconda::rmats=4.0.2
 bioconda::rmats2sashimiplot
 darts-comp-bio::darts_dnn 
 darts-comp-bio::darts_bht
+conda-forge::r-base=3.6.1
