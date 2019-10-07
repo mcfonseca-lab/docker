@@ -1,4 +1,4 @@
-Docker Image with some python libraries to deal with machine learning (7/10/19):
+Docker Image with some deep learning libraries (7/10/19):
   * [scikit-learn](http://scikit-learn.org/stable/)
   * [sklearn-pandas](https://github.com/scikit-learn-contrib/sklearn-pandas)
   * [imbalanced-learn](https://github.com/scikit-learn-contrib/imbalanced-learn)
