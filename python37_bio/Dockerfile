@@ -18,3 +18,4 @@ RUN conda config --add channels defaults && \
  
 RUN conda install -y -c bioconda pandas seaborn scipy numpy
 RUN conda install -y biopython && conda update biopython
+RUN conda install -y -c conda-forge jupyterlab

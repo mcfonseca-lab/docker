@@ -1,11 +1,8 @@
-Docker Image with Python 3.7.1 with the conda package manager and the following python's modules (05/03/2019):
-  * [Matplotlib v3.0.2](https://matplotlib.org/)
-  * [Pandas v0.24.1](https://github.com/pandas-dev/pandas)
-  * [NumPy v1.16.2](https://github.com/numpy/numpy)
-  * [SciPy v1.2.1](https://github.com/scipy/scipy)
-  * [biopython v1.73](https://biopython.org/)
+Docker Image with Python 3.7.3 with the conda package manager and the following python's modules (05/03/2019):
+  * [Matplotlib v3.1.1](https://matplotlib.org/)
+  * [Pandas v0.25.1](https://github.com/pandas-dev/pandas)
+  * [NumPy v1.17.2](https://github.com/numpy/numpy)
+  * [SciPy v1.3.1](https://github.com/scipy/scipy)
+  * [biopython v1.74](https://biopython.org/)
   * [seaborn v0.9.0](https://seaborn.pydata.org/)
-  * [scikit-learn v0.20.3](http://scikit-learn.org/stable/)
-  * [sklearn-pandas v1.8.0](https://github.com/scikit-learn-contrib/sklearn-pandas)
-  * [imbalanced-learn v0.4.3](https://github.com/scikit-learn-contrib/imbalanced-learn)
-  * [tensorflow v1.13.1](https://www.tensorflow.org/)
+  * [jupyterlab v1.1.14](https://github.com/jupyterlab/jupyterlab)
