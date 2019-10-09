@@ -21,3 +21,4 @@ RUN conda install -y biopython && conda update biopython
 RUN conda install -y -c conda-forge jupyterlab jupytext nodejs
 RUN jupyter nbextension install --py jupytext
 RUN jupyter nbextension enable --py jupytext
+RUN jupyter lab build
