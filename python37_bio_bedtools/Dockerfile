@@ -20,5 +20,5 @@ RUN conda install -y -c bioconda pandas seaborn scipy numpy
 RUN conda install -y biopython && conda update biopython
 RUN pip install -U scikit-learn sklearn-pandas imbalanced-learn tensorflow
 
-#Install bedtools
-RUN conda install -c bioconda bedtools
+#Install bedtools and samtools
+RUN conda install -c bioconda bedtools samtools
