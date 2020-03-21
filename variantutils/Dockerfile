@@ -10,23 +10,30 @@ RUN apt-get update && \
 #Update conda, if new version is available
 RUN conda update -n base conda
 
-LABEL vt_version="0.5"
 RUN git clone https://github.com/atks/vt.git && cd vt && make && make test && \
     cp vt /usr/local/bin && cd ../ && rm -rf vt/
 
-LABEL vcfanno_version="0.3.1"
-LABEL pyvcf_version="0.6.8"
-LABEL pybedtools_version="0.8.0"
-LABEL cyvcf2_version="0.10.8"
-LABEL bcftools_version="1.9"
-LABEL plink_version="v1.90b4"
-LABEL scikit_allel="1.2.0"
-RUN conda install -c bioconda vcfanno pyvcf pybedtools cyvcf2 bcftools plink && conda install -c conda-forge scikit-allel
+#Install bcftools with plugins included
+RUN git clone git://github.com/samtools/htslib.git && git clone git://github.com/samtools/bcftools.git 
+RUN cd htslib && make && cd ../
+RUN cd bcftools && make && cd ../
+ENV PATH "$PATH:/tools/htslib"
+ENV PATH "$PATH:/tools/bcftools"
+ENV BCFTOOLS_PLUGINS "/tools/bcftools/plugins"
 
-LABEL hgvs_version="1.2.5.post1"
-LABEL spliceai_version="1.2.1"
+RUN conda install -c bioconda vcfanno pyvcf pybedtools cyvcf2 plink && conda install -c conda-forge scikit-allel
 RUN pip install hgvs tensorflow spliceai
 
+LABEL vt_version="v0.57721"
+LABEL vcfanno_version="0.3.2"
+LABEL pyvcf_version="0.6.8"
+LABEL pybedtools_version="0.8.1"
+LABEL cyvcf2_version="0.11.6"
+LABEL bcftools_version="1.10.2"
+LABEL plink_version="v1.90b612"
+LABEL scikit_allel="1.2.1"
+LABEL hgvs_version="1.2.5.post1"
+LABEL spliceai_version="1.3.1"
 
 RUN apt-get remove git -y
 RUN apt-get clean all -y
