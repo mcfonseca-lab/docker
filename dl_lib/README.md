@@ -1,4 +1,4 @@
-Docker Image with some deep learning libraries (29/01/2020):
+Docker Image with some deep learning libraries (23/03/2020):
   * [scikit-learn](http://scikit-learn.org/stable/)
   * [sklearn-pandas](https://github.com/scikit-learn-contrib/sklearn-pandas)
   * [imbalanced-learn](https://github.com/scikit-learn-contrib/imbalanced-learn)
@@ -6,7 +6,10 @@ Docker Image with some deep learning libraries (29/01/2020):
   * [keras](https://keras.io/)
   * [tensorflow](https://www.tensorflow.org/)
   * [pytorch](https://pytorch.org/)
-  * [scelene-sdk](https://selene.flatironinstitute.org/)
-  * [concise](https://github.com/gagneurlab/concise)
   * [kipoiseq](https://github.com/kipoi/kipoiseq)
   * [deeplift](https://github.com/kundajelab/deeplift)
+
+Previous intalled packages removed in the latest build.
+  * [scelene-sdk](https://selene.flatironinstitute.org/)
+  * [concise](https://github.com/gagneurlab/concise)
+
