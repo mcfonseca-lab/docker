@@ -6,11 +6,12 @@ label2 = args[[2]]
 min_avg_reads = args[[3]]
 fdr_threshold = args[[4]]
 deltaPSI_threshold = args[[5]]
+ftype = args[[6]] #JC or JCEC files
 
 ########################################
 ############# maser object #############
 ########################################
-maser_obj <- maser(".", c(label1, label2), ftype = "JC")
+maser_obj <- maser(".", c(label1, label2), ftype = ftype)
 maser_coverage_filt <- filterByCoverage(maser_obj, avg_reads = min_avg_reads)
 maser_top_events <- topEvents(maser_coverage_filt, fdr = fdr_threshold, deltaPSI = deltaPSI_threshold)
 print(maser_top_events)
