@@ -7,9 +7,9 @@ RUN apt-get update && apt-get install -y bzip2 wget libgl1-mesa-glx git && wget 
     bash Miniconda3-latest-Linux-x86_64.sh -b -p miniconda3
 
 ENV PATH="$PATH:/python_env/miniconda3/bin/"
-
+ENV LD_LIBRARY_PATH="/python_env/miniconda3/lib/"
 #Update conda
-RUN conda update -n base conda
+#RUN conda update -n base conda
 
 #Add Bioconda Channels
 RUN conda config --add channels defaults && \
@@ -37,6 +37,13 @@ RUN jupyter labextension install @bokeh/jupyter_bokeh
 #to be able to use progress bars
 RUN conda install -y -c conda-forge ipywidgets 
 RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
+
+#show memory usage and system resources
+#RUN conda install -c anaconda psutil
+RUN apt-get install -y gcc python3-dev
+RUN pip install nbresuse psutil
+RUN jupyter labextension install jupyterlab-topbar-extension jupyterlab-system-monitor
+
 #open spreadsheets like excel
 #RUN jupyter labextension install jupyterlab-spreadsheet #fails with the latest jupyterlab version (v2)
 #jupytext
