@@ -2,12 +2,12 @@ Dockerfile that includes a set of utilities for VCF manipulation/annotation. Sig
 
 Major update on v0.6: Manual compilation of bcftools and htslib utils, so that bcftools plugins can be used.
 
-Image latest version: 0.6 
+Image latest version: 0.6 (7/04/2020)
 - [bcftools v1.10.2](https://samtools.github.io/bcftools/) - BCFtools is a set of utilities that manipulate variant calls in the Variant Call Format (VCF) and its binary counterpart BCF. 1.7.1<br/>```srun shifter --image=mcfonsecalab/variantutils:latest bcftools```
 
 - [vcfanno v0.3.2](https://github.com/brentp/vcfanno) - vcfanno allows to quickly annotate a VCF with any number of INFO fields from any number of VCFs or BED files.<br/>```srun shifter --image=mcfonsecalab/variantutils:latest vcfanno```
 
-- [vt v0.57721](https://genome.sph.umich.edu/wiki/Vt) - Installed from source using the github repo. vt is a variant tool set that discovers short variants from Next Generation Sequencing data. <br/> ```srun shifter --image=mcfonsecalab/variantutils:latest vt```
+- [vt v2015.11.10](https://genome.sph.umich.edu/wiki/Vt) - Installed from source using the github repo. vt is a variant tool set that discovers short variants from Next Generation Sequencing data. <br/> ```srun shifter --image=mcfonsecalab/variantutils:latest vt```
 
 - [plink v1.90b612](https://www.cog-genomics.org/plink2/) - PLINK is a whole genome association variant analysis toolset, designed to perform a range of basic, large-scale analyses in a computationally efficient manner. <br/> ```srun shifter --image=mcfonsecalab/variantutils:latest plink```
 
