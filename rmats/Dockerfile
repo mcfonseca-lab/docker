@@ -11,7 +11,7 @@ RUN apt-get install -y libgsl-dev
 
 #Add maser script
 ADD run_maser.R /python_env/run_maser.R
-RUN conda install -c conda-forge r-rlang=0.4.0
+RUN conda install -c conda-forge r-rlang=0.4.5
 RUN conda install -c bioconda bioconductor-maser
 
 #Get latest dev version
