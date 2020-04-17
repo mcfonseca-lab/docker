@@ -7,6 +7,8 @@ Docker Image with Jupyterlab and a bunch of several extensions (16/04/2020):
   * [widget to allow progress bar visualization](https://github.com/jupyter-widgets/ipywidgets) - Interactive widgets for Jupyter
   * [memory usage](https://github.com/jtpio/jupyterlab-system-monitor) - Extension to display system information (memory and cpu usage)
   * [jupytext](https://github.com/mwouts/jupytext) - Jupyter notebooks as plain text files
+  * [debugger](https://github.com/jupyterlab/debugger) - Debugger for jupyterlab
+  * [variable inspector](https://github.com/lckr/jupyterlab-variableInspector) - Variable inspector like Rstudio
   * [interactive matplotlib](https://github.com/matplotlib/ipympl) - Allows interactive features of matplotlib in jupyterlab
   * [bokeh](https://github.com/bokeh/jupyter_bokeh) - Renders Bokeh contents in jupyterLab notebooks
   * [dash](https://github.com/GibbsConsulting/jupyter-plotly-dash) - Plotly and Dash applications in jupyterLab notebooks

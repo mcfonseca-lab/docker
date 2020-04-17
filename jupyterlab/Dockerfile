@@ -47,4 +47,11 @@ RUN apt-get install -y texlive-xetex
 RUN jupyter nbextension install --py jupytext
 RUN jupyter nbextension enable --py jupytext
 
+#Jupyterlab debugger
+RUN conda install -c conda-forge xeus-python=0.6.12 ptvsd
+RUN jupyter labextension install @jupyterlab/debugger
+
+#Variable inspector
+RUN jupyter labextension install @lckr/jupyterlab_variableinspector
+
 RUN jupyter lab build
