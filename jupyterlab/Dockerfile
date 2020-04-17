@@ -46,6 +46,7 @@ RUN jupyter labextension install jupyterlab-topbar-extension jupyterlab-system-m
 RUN apt-get install -y texlive-xetex
 RUN jupyter nbextension install --py jupytext
 RUN jupyter nbextension enable --py jupytext
+RUN jupyter labextension install jupyterlab-jupytext
 
 #Jupyterlab debugger
 RUN conda install -c conda-forge xeus-python=0.6.12 ptvsd
