@@ -11,7 +11,7 @@ RUN pip install -U gtfparse scikit-learn imbalanced-learn yellowbrick sklearn-pa
 RUN pip install deap gplearn
 
 #Deep leearning 
-RUN pip install -U tensorflow tensorflow-gpu Keras
+RUN pip install -U tensorflow tensorflow-gpu tensorflow-addons Keras
 #Installing keras and tensorflow through conda leads to a change in the ca certificate verion and openssl package. This crashes juptyer lab sessions where extensions are no longer accessible. Installing through pip solves the issue.
 #RUN conda install -c anaconda keras-gpu tensorflow-gpu
 #RUN conda install -c anaconda keras tensorflow

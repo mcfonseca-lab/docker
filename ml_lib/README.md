@@ -8,6 +8,7 @@ Docker Image with a set of libraries to execute a wide range of different machin
   * [deap](https://github.com/DEAP/deap)
   * [keras](https://keras.io/)
   * [tensorflow](https://www.tensorflow.org/)
+  * [tensorflow addons](https://github.com/tensorflow/addons)
   * [kipoiseq](https://github.com/kipoi/kipoiseq)
   * [deeplift](https://github.com/kundajelab/deeplift)
 
