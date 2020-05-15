@@ -36,6 +36,7 @@ RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
 
 #show memory usage and system resources
 #RUN conda install -c anaconda psutil
+RUN apt-get update
 RUN apt-get install -y gcc python3-dev
 RUN pip install nbresuse psutil
 RUN jupyter labextension install jupyterlab-topbar-extension jupyterlab-system-monitor

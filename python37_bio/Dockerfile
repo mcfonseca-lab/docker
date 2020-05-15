@@ -17,4 +17,4 @@ RUN conda config --add channels defaults && \
  
 RUN conda install -y -c bioconda pandas seaborn scipy numpy mygene
 RUN conda install -y biopython && conda update biopython
-RUN pip install 'plotnine[all]'
+RUN pip install 'plotnine[all]' natsort
