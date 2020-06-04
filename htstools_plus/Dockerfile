@@ -57,7 +57,8 @@ RUN wget -q https://downloads.sourceforge.net/project/subread/subread-${PACKAGE_
     mv * /usr/local/bin/
 
 #FastQC
-RUN wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip && unzip fastqc_v0.11.9.zip && \
+ARG PACKAGE_VERSION=0.11.9
+RUN wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v${PACKAGE_VERSION}.zip && unzip fastqc_v${PACKAGE_VERSION}.zip && \
     cd FastQC && chmod +x fastqc && mv * /usr/local/bin/
 
 #TrimGalore Installation

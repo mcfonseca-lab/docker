@@ -10,3 +10,4 @@ Image latest version: 0.6
 - [bamtools](https://github.com/pezmaster31/bamtools) C++ toolit for working with BAM data. (version:2.5.0)
 - [faToTwoBit](https://genome.ucsc.edu/goldenpath/help/blatSpec.html#faToTwoBitUsage) - Tool to convert DNA from fasta to .2bit format (Required for some GAT4 Spark tools).
 - [TrimGalore](http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) TrimGalore - A wrapper tool around Cutadapt and FastQC to consistently apply quality and adapter trimming to FastQ files. (version:0.6.5)
+- [FastQC](https://github.com/s-andrews/FastQC) - FastQC is a program designed to spot potential problems in high througput sequencing datasets. (version:0.11.9)
