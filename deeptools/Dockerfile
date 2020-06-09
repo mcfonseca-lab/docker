@@ -1,4 +1,4 @@
-FROM mcfonsecalab/python37_bio
+FROM mcfonsecalab/python37_bio:0.10
 
 MAINTAINER Rui Luis <ruisergioluis@gmail.com>
 

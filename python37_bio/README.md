@@ -1,6 +1,6 @@
 Docker Image with Python 3.7.6 with the conda package manager and the following python's modules (09/06/2020):
 
-    DOCKER HUB TAG: 0.2
+    DOCKER HUB TAG: 0.10
 
   * [Matplotlib v3.1.3](https://matplotlib.org/) 
   * [Pandas v1.0.3](https://github.com/pandas-dev/pandas) 
