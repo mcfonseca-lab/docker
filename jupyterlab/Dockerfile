@@ -5,7 +5,12 @@ MAINTAINER Pedro Barbosa <pedro.barbosa@medicina.ulisboa.pt>
 ENV LD_LIBRARY_PATH="/python_env/miniconda3/lib/"
 ENV DEBIAN_FRONTEND=noninteractive 
 
-RUN conda install -y -c conda-forge jupyterlab jupytext nodejs nb_conda_kernels
+#nodejs
+RUN apt install -y curl dirmngr apt-transport-https lsb-release ca-certificates
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get install -y nodejs
+
+RUN conda install -y -c conda-forge jupyterlab jupytext nb_conda_kernels
 
 #check for markdown spelling mistakes
 RUN jupyter labextension install @ijmbarr/jupyterlab_spellchecker
