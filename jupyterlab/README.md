@@ -1,5 +1,5 @@
-Docker Image with Jupyterlab and a bunch of several extensions (16/04/2020):
-  * [jupyterlab v2.01](https://github.com/jupyterlab/jupyterlab)
+Docker Image with Jupyterlab and a bunch of several extensions (09/06/2020):
+  * [jupyterlab v2.1.2](https://github.com/jupyterlab/jupyterlab)
   * [spellchecker](https://github.com/ijmbarr/jupyterlab_spellchecker) - Check for markdown spelling mistakes
   * [table of contents](https://github.com/jupyterlab/jupyterlab-toc) - Automatic generation of table of contents
   * [go to definition](https://github.com/krassowski/jupyterlab-go-to-definition) - Jump to definition of a variable or function in JupyterLab
