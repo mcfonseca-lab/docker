@@ -11,3 +11,4 @@ Docker Image with Python 3.7.6 with the conda package manager and the following 
   * [pyBigWig v0.3.17](https://github.com/deeptools/pyBigWig)
   * [pysam v0.16.0](https://github.com/pysam-developers/pysam)
   * [py2bit v0.3.0](https://github.com/deeptools/py2bit)
+  * [pybedtools v0.8.1](https://daler.github.io/pybedtools/#)
