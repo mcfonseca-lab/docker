@@ -1,7 +1,0 @@
-bioconda::samtools
-bioconda::star
-bioconda::rmats=3.2.5
-bioconda::rmats2sashimiplot
-darts-comp-bio::darts_dnn 
-darts-comp-bio::darts_bht
-conda-forge::r-base=3.6.1
