@@ -24,7 +24,8 @@ RUN jupyter labextension install @krassowski/jupyterlab-lsp
 RUN conda install -c conda-forge python-language-server r-languageserver
 #git version control embeeded in Jupiter Notebook
 RUN jupyter labextension install @jupyterlab/git
-
+#To manage conda environments
+RUN jupyter labextension install @mamba-org/gator-lab
 
 
 #Interactive plots
