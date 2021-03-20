@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb8e1d16-00be-4aab-ba3a-75842112cb4a" name="Default Changelist" comment="Created macs2 (v2.2.7.1) docker image." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1crYFXeKp6QRusZG8tetnjvEWrL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/macs2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/macs2" />
+      <recent name="$PROJECT_DIR$/bismark" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb8e1d16-00be-4aab-ba3a-75842112cb4a" name="Default Changelist" comment="" />
+      <created>1591288075847</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591288075847</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Set a new way of referring to tools' version. Now, in the first line of each tool section is defined a variable PACKAGE_VERSION with the specific version of the tool to be installed.&#10;&#10;Tools updated:&#10;&#10;- RSeQC&#10;- Deeptools&#10;- Samtools&#10;- Multiqc&#10;&#10;New Tools:&#10;&#10;- FastQC&#10;- TrimGalore">
+      <created>1591303435371</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591303435371</updated>
+    </task>
+    <task id="LOCAL-00002" summary="FastQC layout formatted">
+      <created>1591303613732</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591303613732</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added deeptools Image, version 3.4.3">
+      <created>1591704242906</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591704242906</updated>
+    </task>
+    <task id="LOCAL-00004" summary="In python37_bio container, versions are now defined for each package. Thus, it became now possible to re-make the image in docker hub keeping in a controlled way the packages' version.&#10;&#10;Added pyBigWig package to python37_bio container!&#10;Added pysam package to python37_bio container!&#10;Added pyBigWig package to python37_bio container!&#10;Added py2bit package to python37_bio container!">
+      <created>1591717186320</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591717186320</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Correction in README.md file from python37_bio container">
+      <created>1591717343795</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591717343795</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updating the version of DOCKER HUB TAG to 0.10, for python37_bio container.&#10;&#10;Added TAG to FROM mcfonsecalab/python37_bio in deeptools container (tag:0.10)">
+      <created>1591718923035</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591718923036</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updating the version of DOCKER HUB TAG to 3.4.3, for deeptools container.">
+      <created>1591719625721</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591719625721</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added deeptoolsintervals package to deeptools container.">
+      <created>1591726305618</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591726305618</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated Matplotlib v3.2.1 in python37_bio&#10;&#10;Added plotly package to necessary packages to deeptools">
+      <created>1591730279664</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591730279664</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated Matplotlib v3.2.1 in python37_bio&#10;&#10;Added plotly package to necessary packages to deeptools">
+      <created>1591730285893</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591730285893</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added pybedtools (v0.8.1) to python37_bio">
+      <created>1592776429144</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1592776429144</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added pybedtools (v0.8.1) documentation to python37_bio README.md">
+      <created>1592776532462</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1592776532462</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added pyfaidx (v0.5.9) to python37_bio README.md">
+      <created>1593364634127</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593364634127</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added Implicon docker image:&#10;-bismark&#10;-snpsplit">
+      <created>1594488760704</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1594488760704</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Updated README.md of implicon image">
+      <created>1594489100514</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1594489100514</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Created macs2 (v2.2.7.1) docker image.">
+      <created>1604081701337</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1604081701337</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Set a new way of referring to tools' version. Now, in the first line of each tool section is defined a variable PACKAGE_VERSION with the specific version of the tool to be installed.&#10;&#10;Tools updated:&#10;&#10;- RSeQC&#10;- Deeptools&#10;- Samtools&#10;- Multiqc&#10;&#10;New Tools:&#10;&#10;- FastQC&#10;- TrimGalore" />
+    <MESSAGE value="FastQC layout formatted" />
+    <MESSAGE value="Added deeptools Image, version 3.4.3" />
+    <MESSAGE value="In python37_bio container, versions are now defined for each package. Thus, it became now possible to re-make the image in docker hub keeping in a controlled way the packages' version.&#10;&#10;Added pyBigWig package to python37_bio container!&#10;Added pysam package to python37_bio container!&#10;Added pyBigWig package to python37_bio container!&#10;Added py2bit package to python37_bio container!" />
+    <MESSAGE value="Correction in README.md file from python37_bio container" />
+    <MESSAGE value="Updating the version of DOCKER HUB TAG to 0.10, for python37_bio container.&#10;&#10;Added TAG to FROM mcfonsecalab/python37_bio in deeptools container (tag:0.10)" />
+    <MESSAGE value="Updating the version of DOCKER HUB TAG to 3.4.3, for deeptools container." />
+    <MESSAGE value="Added deeptoolsintervals package to deeptools container." />
+    <MESSAGE value="Updated Matplotlib v3.2.1 in python37_bio&#10;&#10;Added plotly package to necessary packages to deeptools" />
+    <MESSAGE value="Added pybedtools (v0.8.1) to python37_bio" />
+    <MESSAGE value="Added pybedtools (v0.8.1) documentation to python37_bio README.md" />
+    <MESSAGE value="Added pyfaidx (v0.5.9) to python37_bio README.md" />
+    <MESSAGE value="Added Implicon docker image:&#10;-bismark&#10;-snpsplit" />
+    <MESSAGE value="Updated README.md of implicon image" />
+    <MESSAGE value="Created macs2 (v2.2.7.1) docker image." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created macs2 (v2.2.7.1) docker image." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604081714338">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604081714338" />
+    <state x="489" y="372" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604080910403">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="489" y="372" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1604080910403" />
+  </component>
+</project>
