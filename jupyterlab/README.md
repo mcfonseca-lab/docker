@@ -1,4 +1,4 @@
-Docker Image with Jupyterlab and a bunch of several extensions (09/06/2020):
+Docker Image with Jupyterlab and a bunch of several extensions (20/03/2021):
   * [jupyterlab v3.0.12](https://github.com/jupyterlab/jupyterlab)
   * [spellchecker](https://github.com/ijmbarr/jupyterlab_spellchecker) - Check for markdown spelling mistakes
   * [table of contents](https://github.com/jupyterlab/jupyterlab-toc) - Automatic generation of table of contents
