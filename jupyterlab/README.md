@@ -1,5 +1,5 @@
 Docker Image with Jupyterlab and a bunch of several extensions (09/06/2020):
-  * [jupyterlab v2.1.2](https://github.com/jupyterlab/jupyterlab)
+  * [jupyterlab v3.0.12](https://github.com/jupyterlab/jupyterlab)
   * [spellchecker](https://github.com/ijmbarr/jupyterlab_spellchecker) - Check for markdown spelling mistakes
   * [table of contents](https://github.com/jupyterlab/jupyterlab-toc) - Automatic generation of table of contents
   * [go to definition](https://github.com/krassowski/jupyterlab-go-to-definition) - Jump to definition of a variable or function in JupyterLab
@@ -12,4 +12,5 @@ Docker Image with Jupyterlab and a bunch of several extensions (09/06/2020):
   * [interactive matplotlib](https://github.com/matplotlib/ipympl) - Allows interactive features of matplotlib in jupyterlab
   * [bokeh](https://github.com/bokeh/jupyter_bokeh) - Renders Bokeh contents in jupyterLab notebooks
   * [dash](https://github.com/GibbsConsulting/jupyter-plotly-dash) - Plotly and Dash applications in jupyterLab notebooks
-
+  * [gator](https://github.com/mamba-org/gator) - Provides Conda/Mamba environment and package management
+  * [git](https://github.com/jupyterlab/jupyterlab-git) - A JupyterLab extension for version control using Git
