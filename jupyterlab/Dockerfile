@@ -22,6 +22,10 @@ RUN jupyter labextension install @krassowski/jupyterlab_go_to_definition
 RUN pip install --pre jupyter-lsp
 RUN jupyter labextension install @krassowski/jupyterlab-lsp
 RUN conda install -c conda-forge python-language-server r-languageserver
+#git version control embeeded in Jupiter Notebook
+RUN jupyter labextension install @jupyterlab/git
+
+
 
 #Interactive plots
 #Interactive features of matplotlib in the Jupyter notebook and in JupyterLab
