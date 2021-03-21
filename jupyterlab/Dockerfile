@@ -24,11 +24,10 @@ RUN pip install --pre jupyter-lsp
 RUN jupyter labextension install @krassowski/jupyterlab-lsp
 RUN conda install -c conda-forge python-language-server r-languageserver
 #git version control embeeded in Jupyter Notebook
-RUN pip install --upgrade jupyterlab-git
+RUN conda install -y -c conda-forge jupyterlab-git
 RUN jupyter labextension install @jupyterlab/git
-#To manage conda environments
-RUN jupyter labextension install @mamba-org/gator-lab
-
+#Editable spreadsheets
+RUN jupyter labextension install jupyterlab-spreadsheet
 
 #Interactive plots
 #Interactive features of matplotlib in the Jupyter notebook and in JupyterLab
