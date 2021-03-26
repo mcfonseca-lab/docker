@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
 RUN apt install -y curl dirmngr apt-transport-https lsb-release ca-certificates
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get install -y nodejs x11vnc
+RUN apt-get install -y nodejs
 
 RUN conda install -y -c conda-forge jupyterlab=3.0.12 jupytext nb_conda_kernels
 
