@@ -32,8 +32,8 @@ get_mean <- function(x){
   exc_s1 <- base::sapply(strsplit(as.character(x["SJC_SAMPLE_1"]), ",", fixed=T), function(x) base::mean(as.numeric(x)))
   inc_s2 <- base::sapply(strsplit(as.character(x["IJC_SAMPLE_2"]), ",", fixed=T), function(x) base::mean(as.numeric(x)))
   exc_s2 <- base::sapply(strsplit(as.character(x["SJC_SAMPLE_2"]), ",", fixed=T), function(x) base::mean(as.numeric(x)))
-  max_g1 <- max(c(inc_s1, inc_s2))
-  max_g2 <- max(c(inc_s2, inc_s2))
+  max_g1 <- max(c(inc_s1, exc_s1))
+  max_g2 <- max(c(inc_s2, exc_s2))
   
   return(min(c(max_g1, max_g2)))
 
