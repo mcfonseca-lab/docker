@@ -27,7 +27,7 @@ RUN git clone https://github.com/Xinglab/PAIRADISE.git && Rscript install_r_deps
 #rmats2sashimi
 RUN git clone https://github.com/Xinglab/rmats2sashimiplot.git
 WORKDIR rmats2sashimiplot/
-RUN python ./setup.py install
+RUN ./2to3.sh && python ./setup.py install
 
 WORKDIR /python_env
 ADD run_maser.R .
