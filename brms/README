@@ -1,0 +1,1 @@
+Dockerfile that installs the latest version of brms, along with dependencies (R, tidyverse, rstan, as well as others that are less important to mention).
