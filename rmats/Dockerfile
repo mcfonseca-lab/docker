@@ -19,7 +19,7 @@ RUN apt-get install -y --no-install-recommends  \
        zlib1g-dev
 
 #rmats, pairadise, and maser
-RUN mamba install -c conda-forge -c bioconda rmats=4.1.1 bioconductor-maser
+RUN mamba install -c conda-forge -c bioconda rmats=4.1.1 bioconductor-maser samtools bedtools
 RUN git clone https://github.com/Xinglab/rmats-turbo.git
 WORKDIR rmats-turbo
 RUN git clone https://github.com/Xinglab/PAIRADISE.git && Rscript install_r_deps.R
