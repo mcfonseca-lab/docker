@@ -1,8 +1,0 @@
-bioconda::samtools
-bioconda::star
-bioconda::rmats
-bioconda::rmats2sashimiplot
-r=3.3.2
-r-git2r
-conda-forge::readline
-davidaknowles::r-leafcutter
