@@ -1,4 +1,4 @@
-Docker Image with Python 3.8.5 with the conda package manager and the following python's modules (05/12/2021):
+Docker Image with Python 3.8.10 with the conda package manager and the following python's modules (05/12/2021):
 
     DOCKER HUB TAG: 0.2
 
