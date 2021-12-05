@@ -1,23 +1,31 @@
-FROM ubuntu:16.04 
+FROM ubuntu:21.04 
 
 MAINTAINER Pedro Barbosa <pedro.barbosa@medicina.ulisboa.pt> 
 
 WORKDIR /tools
 
 RUN apt-get update -qq && \
-    apt-get install -qq bzip2 git gcc g++ make python zlib1g-dev wget
+    apt-get install -qq bzip2 git gcc g++ make python zlib1g-dev libbz2-dev liblzma-dev wget
 
-#strelka v2.8.4
-RUN wget https://github.com/Illumina/strelka/archive/v2.8.4.tar.gz && \
-    tar -xvzf v2.8.4.tar.gz && \
-    mkdir build && cd build && \
-    ../strelka-2.8.4/configure --jobs=4 --prefix=/tools/strelka2 && \
-    make -j4 install
+LABEL version="2.9.10"
+LABEL gvcf_genotyper="26.02.2019"
 
-#gvcfgenotyper 2018.02.07_master_c9c81d3
+# download strelka binary
+RUN wget https://github.com/Illumina/strelka/releases/download/v2.9.10/strelka-2.9.10.centos6_x86_64.tar.bz2
+RUN tar xvjf strelka-2.9.10.centos6_x86_64.tar.bz2
+
+# Check successful instlal
+RUN bash strelka-2.9.10.centos6_x86_64/bin/runStrelkaSomaticWorkflowDemo.bash
+RUN bash strelka-2.9.10.centos6_x86_64/bin/runStrelkaGermlineWorkflowDemo.bash
+
+#gvcfgenotyper
 RUN git clone https://github.com/Illumina/gvcfgenotyper.git && \
     cd gvcfgenotyper && make 
 
+RUN mv strelka-2.9.10.centos6_x86_64 strelka2
 ENV PATH "$PATH:/tools/strelka2/bin:/tools/gvcfgenotyper/bin:"
-RUN rm -rf build && rm -rf *tar.gz && rm -rf strelka-2.8.4 
+
+RUN rm strelka-2.9.10.centos6_x86_64.tar.bz2 && \
+    rm -rf strelkaGermlineDemoAnalysis && \
+    rm -rf strelkaSomaticDemoAnalysis
 RUN apt-get autoclean -y
