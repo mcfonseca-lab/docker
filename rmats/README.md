@@ -1,4 +1,6 @@
-Dockerfile that includes rMATS and maser to perform RNA splicing analysis (last update on 05/12/2021)
+Dockerfile that includes rMATS and maser to perform RNA splicing analysis (last update on 05/12/2021).
+
+To run rmats, just call `python rmats.py`.
 
 Image latest version: 4.1.1
 
