@@ -1,4 +1,4 @@
-Docker Image with Python 3.8.10 with the conda package manager and the following python's modules (05/12/2021):
+Docker Image with Python 3.8.10 with the conda package manager and the following python's modules (07/12/2021):
 
     DOCKER HUB TAG: 0.2
 
@@ -15,4 +15,5 @@ Docker Image with Python 3.8.10 with the conda package manager and the following
   * [bedtools v2.30.0](https://github.com/arq5x/bedtools2)
   * [pybedtools v0.8.2](https://daler.github.io/pybedtools/#)
   * [pyfaidx v0.6.3.1](https://pypi.org/project/pyfaidx/)
+  * [samtools v1.14](https://github.com/samtools/samtools)
   

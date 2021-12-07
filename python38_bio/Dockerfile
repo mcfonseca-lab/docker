@@ -16,5 +16,5 @@ RUN conda config --add channels defaults && \
  
 RUN conda install -c conda-forge mamba
 RUN mamba install -y -c bioconda pandas seaborn scipy numpy mygene \
-    pyBigWig pysam py2bit matplotlib pybedtools pyfaidx pip
+    pyBigWig pysam py2bit matplotlib pybedtools pyfaidx pip samtools 
 RUN pip install 'plotnine[all]' natsort biopython
