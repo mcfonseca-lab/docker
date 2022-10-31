@@ -1,19 +1,33 @@
-FROM mcfonsecalab/python37_bio:latest
+FROM centos:7.6.1810
 
-MAINTAINER Pedro Barbosa <pedro.barbosa@medicina.ulisboa.pt>
+RUN yum -y update
 
-RUN apt-get update && apt-get install -y gcc make zlib1g-dev libbz2-dev liblzma-dev libncursesw5-dev libncurses5-dev libcurl4-openssl-dev g++
+RUN yum install -y gcc gcc-c++ openssl-devel bzip2-devel libffi-devel zlib-devel wget make bzip2 xz-devel libcurl-devel git
 
-WORKDIR /usr/bin
-RUN wget https://github.com/samtools/htslib/releases/download/1.10.2/htslib-1.10.2.tar.bz2
-RUN tar -vxjf htslib-1.10.2.tar.bz2 
+WORKDIR /opt
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh && bash Miniconda3-py38_4.12.0-Linux-x86_64.sh -b -p miniconda3
 
-WORKDIR htslib-1.10.2
-RUN ./configure && make && make install
-ENV HTSLIB_LIBRARY_DIR=/usr/local/lib
-ENV HTSLIB_INCLUDE_DIR=/usr/local/include
-WORKDIR /python_env
+ENV PATH="$PATH:/opt/miniconda3/bin/"
+RUN conda update -n base conda
 
-RUN pip install git+https://bitbucket.org/biociphers/majiq_academic.git#egg=majiq
-ADD majiq_wrapper.py /python_env/majiq
-RUN chmod +x majiq && mv majiq /python_env/miniconda3/bin/
+#Add Bioconda Channels
+RUN conda config --add channels defaults && \
+    conda config --add channels conda-forge && \
+    conda config --add channels bioconda
+
+WORKDIR /usr/bin 
+RUN rm -f python* && ln -s /opt/miniconda3/bin/python .
+
+WORKDIR /opt
+RUN wget https://github.com/samtools/htslib/releases/download/1.16/htslib-1.16.tar.bz2
+RUN tar -vxjf htslib-1.16.tar.bz2
+ 
+WORKDIR htslib-1.16
+RUN ./configure --prefix=/usr/local/htslib && make && make install
+
+ENV HTSLIB_LIBRARY_DIR=/usr/local/htslib/lib
+ENV HTSLIB_INCLUDE_DIR=/usr/local/htslib/include
+
+WORKDIR /opt
+RUN rm -rf Miniconda* htslib*
+RUN pip install git+https://bitbucket.org/biociphers/majiq_academic.git
