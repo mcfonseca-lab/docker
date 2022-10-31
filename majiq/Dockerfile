@@ -31,3 +31,4 @@ ENV HTSLIB_INCLUDE_DIR=/usr/local/htslib/include
 WORKDIR /opt
 RUN rm -rf Miniconda* htslib*
 RUN pip install git+https://bitbucket.org/biociphers/majiq_academic.git
+RUN git clone https://PedroBarbosa3@bitbucket.org/biociphers/moccasin.git && cd moccasin && pip install pandas==1.0.5
