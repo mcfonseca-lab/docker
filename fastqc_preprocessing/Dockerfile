@@ -1,4 +1,4 @@
-FROM docker.io/condaforge/mambaforge:22.9.0-3
+FROM docker.io/condaforge/mambaforge:23.3.1-1
 
 RUN mamba install -y -n base -c bioconda fastp fastqc trim-galore unzip && \
     mamba clean --all --yes

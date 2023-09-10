@@ -1,9 +1,9 @@
-FROM mcfonsecalab/python38_bio:latest
+FROM docker.io/condaforge/mambaforge:23.3.1-1
 
-MAINTAINER Pedro Barbosa <pedro.barbosa@medicina.ulisboa.pt>
+LABEL maintainer="Pedro Barbosa <pedro.barbosa@medicina.ulisboa.pt>"
 
-ENV RSEQC_VERSION 5.0.0
-ENV MULTIQC_VERSION 1.13
+ENV RSEQC_VERSION 5.0.1
+ENV MULTIQC_VERSION 1.15
 RUN mamba update conda mamba
 
 RUN mamba install -c bioconda rseqc multiqc

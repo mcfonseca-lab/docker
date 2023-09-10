@@ -1,10 +1,11 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
-MAINTAINER Pedro Barbosa <pedro.barbosa@medicina.ulisboa.pt>
+ARG DEBIAN_FRONTEND=noninteractive
+
+LABEL maintainer="Pedro Barbosa <pedro.barbosa@medicina.ulisboa.pt>"
 
 WORKDIR /python_env
-RUN apt-get update && apt-get install -y bzip2 wget libgl1-mesa-glx git && wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh && \
-    bash Miniconda3-py38_4.10.3-Linux-x86_64.sh -b -p miniconda3
+RUN apt-get update && apt-get install -y libarchive-dev libgl1-mesa-glx bzip2 wget git && wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.5.2-0-Linux-x86_64.sh && bash Miniconda3-py310_23.5.2-0-Linux-x86_64.sh -b -p miniconda3
 
 ENV PATH="$PATH:/python_env/miniconda3/bin/"
 RUN conda update -n base conda

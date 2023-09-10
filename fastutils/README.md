@@ -2,6 +2,8 @@ Dockerfile with [seqtk](https://github.com/lh3/seqtk) and [seqkit](https://githu
 
 These tools employ efficient algorithms to execute common tasks on FASTA/Q files such as conversion of file formats, grepping, filtering, deduplication, splitting and sampling of sequences.
 
-Image latest version: 0.2 (updated in 7/12/2021)
-- seqtk version - 1.3-r117-dirty
-- seqkit version - 2.1.0
+- seqtk v1.4-r130-dirty
+- seqkit v2.5.1
+
+Image latest version: 0.4
+Last update: 10/09/2023
