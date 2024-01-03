@@ -5,7 +5,7 @@ RUN yum -y update
 RUN yum install -y gcc gcc-c++ openssl-devel bzip2-devel libffi-devel zlib-devel wget make bzip2 xz-devel libcurl-devel git
 
 WORKDIR /opt
-RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh && bash Miniconda3-py38_4.12.0-Linux-x86_64.sh -b -p miniconda3
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.11.0-2-Linux-x86_64.sh && bash Miniconda3-py310_23.11.0-2-Linux-x86_64.sh -b -p miniconda3
 
 ENV PATH="$PATH:/opt/miniconda3/bin/"
 RUN conda update -n base conda
@@ -33,5 +33,8 @@ RUN rm -rf Miniconda* htslib*
 RUN pip install git+https://bitbucket.org/biociphers/majiq_academic.git
 RUN git clone https://PedroBarbosa3@bitbucket.org/biociphers/moccasin.git && cd moccasin && pip install pandas
 
-LABEL majiq="2.4.dev102"
+COPY majiq_license_academic_official.lic /opt/majiq_license_academic_official.lic
+ENV MAJIQ_LICENSE_FILE=/opt/majiq_license_academic_official.lic
+
+LABEL majiq="2.5.1.dev1+g62d35d4"
 LABEL moccasin="0.24"
