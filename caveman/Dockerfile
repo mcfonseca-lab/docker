@@ -54,4 +54,8 @@ RUN git clone https://github.com/cancerit/CaVEMan && \
     cp bin/* /usr/local/bin/ && \
     cd ..
 
+WORKDIR CaVEMan
+
 #docker run --platform=linux/amd64 -it --rm caveman /bin/bash
+#caveman --version
+#1.15.3
