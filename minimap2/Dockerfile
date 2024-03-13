@@ -1,14 +1,14 @@
-FROM mcfonsecalab/python37_bio
+FROM docker.io/condaforge/mambaforge:23.3.1-1
 
-MAINTAINER Rui Luis  <rluis@medicina.ulisboa.pt>
+LABEL maintainer="Pedro Barbosa <pedro.barbosa@medicina.ulisboa.pt>"
 
-RUN apt-get update
-RUN apt-get install -y  build-essential
+ENV MINIMAP2 VERSION 2.27(r1193)
 
-RUN conda update -n base conda
+RUN apt-get install -y wget
 
-LABEL Vminimap2="v2.17"
-RUN conda install -c bioconda minimap2=$Vminimap2
-
-RUN apt-get autoclean -y
-
+WORKDIR /opt
+RUN wget https://github.com/lh3/minimap2/releases/download/v2.27/minimap2-2.27_x64-linux.tar.bz2
+RUN tar -xvf minimap2-2.27_x64-linux.tar.bz2
+RUN mv minimap2-2.27_x64-linux minimap2-2.27
+RUN rm minimap2-2.27_x64-linux.tar.bz2
+ENV PATH="${PATH}:/opt/minimap2-2.27"
